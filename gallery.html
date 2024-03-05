@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./assets/css/lightbox.css">
+    <title>Gallery</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar container-lg navbar-expand-lg mt-lg-4 py-0 rounded">
+        <div class="container-fluid">
+          <a class="navbar-brand my-0 py-0" href="/"
+            ><img
+              src="./assets/images/ivory dental logo.jpg"
+              alt="ivory-dental-logo"
+              class="navbar-logo py-0 my-0"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse d-lg-flex text-center justify-content-lg-end align-items-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav text-center">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contact.html">Contact</a>
+              </li>
+              <div class="mb-4 mb-lg-0">
+                <button type="button" class="m-1 ms-2 px-3 text-center">
+                  Book Online
+                </button>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section class="hero" id="hero">
+        <div class="container-lg">
+          <div class="row vh-100 align-items-center">
+            <div class="col-sm-8 col-md-8 col-lg-6">
+              <h3 class="fs-4">Ivory Dental Clinic</h3>
+              <h3 class="fs-1">Gallery</h3>
+              <div class="mt-4">
+                <a
+                  href="https://maps.app.goo.gl/xgu9iGdMV7pHig6c6"
+                  target="_blank"
+                  ><button>Book Online</button></a
+                >
+              </div>
+              <h3 class="fs-4 mt-4">
+                or call <a href="tel:+94 763686180">(076)3686180</a>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <section class="before-after py-5">
+      <div class="container-lg">
+        <h3 class="fs-2 text-center">Before & After</h3>
+        <p class="text-center">(Note: Move slider to the left and right to differentiate before and after treatement)</p>
+        <div class="row justify-content-center align-items-center">
+          <div class="col-11 col-sm-10 col-md-7 col-lg-4 mt-5 px-0 px-md-2">
+              <div class="container-before-after">
+                <div class="image-container">
+                  <img
+                    class="image-before custom-slider-image"
+                    src="./assets/images/before.png"
+                    alt="color photo"
+                  />
+                  <img
+                    class="image-after custom-slider-image"
+                    src="./assets/images/after.png"
+                    alt="black and white"
+                  />
+                </div>
+                <input
+                  type="range"
+                  min="0"
+                  max="100"
+                  value="50"
+                  aria-label="Percentage of before photo shown"
+                  class="custom-slider"
+                />
+                <div class="slider-line" aria-hidden="true"></div>
+                <div class="slider-button" aria-hidden="true">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    fill="currentColor"
+                    viewBox="0 0 256 256"
+                  >
+                    <rect width="256" height="256" fill="none"></rect>
+                    <line
+                      x1="128"
+                      y1="40"
+                      x2="128"
+                      y2="216"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="16"
+                    ></line>
+                    <line
+                      x1="96"
+                      y1="128"
+                      x2="16"
+                      y2="128"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="16"
+                    ></line>
+                    <polyline
+                      points="48 160 16 128 48 96"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="16"
+                    ></polyline>
+                    <line
+                      x1="160"
+                      y1="128"
+                      x2="240"
+                      y2="128"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="16"
+                    ></line>
+                    <polyline
+                      points="208 96 240 128 208 160"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="16"
+                    ></polyline>
+                  </svg>
+                </div>
+              </div>
+          </div>
+          <div class="col-11 col-sm-10 col-md-7 col-lg-4 mt-5 px-0 px-md-2">
+            <div class="container-before-after">
+              <div class="image-container">
+                <img
+                  class="image-before custom-slider-image"
+                  src="./assets/images/before.png"
+                  alt="color photo"
+                />
+                <img
+                  class="image-after custom-slider-image"
+                  src="./assets/images/after.png"
+                  alt="black and white"
+                />
+              </div>
+              <input
+                type="range"
+                min="0"
+                max="100"
+                value="50"
+                aria-label="Percentage of before photo shown"
+                class="custom-slider"
+              />
+              <div class="slider-line" aria-hidden="true"></div>
+              <div class="slider-button" aria-hidden="true">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  fill="currentColor"
+                  viewBox="0 0 256 256"
+                >
+                  <rect width="256" height="256" fill="none"></rect>
+                  <line
+                    x1="128"
+                    y1="40"
+                    x2="128"
+                    y2="216"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  ></line>
+                  <line
+                    x1="96"
+                    y1="128"
+                    x2="16"
+                    y2="128"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  ></line>
+                  <polyline
+                    points="48 160 16 128 48 96"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  ></polyline>
+                  <line
+                    x1="160"
+                    y1="128"
+                    x2="240"
+                    y2="128"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  ></line>
+                  <polyline
+                    points="208 96 240 128 208 160"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  ></polyline>
+                </svg>
+              </div>
+            </div>
+        </div>
+        <div class="col-11 col-sm-10 col-md-7 col-lg-4 mt-5 px-0 px-md-2">
+            <div class="container-before-after">
+              <div class="image-container">
+                <img
+                  class="image-before custom-slider-image"
+                  src="./assets/images/before.png"
+                  alt="color photo"
+                />
+                <img
+                  class="image-after custom-slider-image"
+                  src="./assets/images/after.png"
+                  alt="black and white"
+                />
+              </div>
+              <input
+                type="range"
+                min="0"
+                max="100"
+                value="50"
+                aria-label="Percentage of before photo shown"
+                class="custom-slider"
+              />
+              <div class="slider-line" aria-hidden="true"></div>
+              <div class="slider-button" aria-hidden="true">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  fill="currentColor"
+                  viewBox="0 0 256 256"
+                >
+                  <rect width="256" height="256" fill="none"></rect>
+                  <line
+                    x1="128"
+                    y1="40"
+                    x2="128"
+                    y2="216"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  ></line>
+                  <line
+                    x1="96"
+                    y1="128"
+                    x2="16"
+                    y2="128"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  ></line>
+                  <polyline
+                    points="48 160 16 128 48 96"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  ></polyline>
+                  <line
+                    x1="160"
+                    y1="128"
+                    x2="240"
+                    y2="128"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  ></line>
+                  <polyline
+                    points="208 96 240 128 208 160"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  ></polyline>
+                </svg>
+              </div>
+            </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pb-5">
+        <div class="container-lg">
+          <h3 class="fs-2 text-center">Location - 1</h3>
+          <p class="text-center">Small description of location - 1</p>
+          <div class="container-gallery">
+            <div class="gallery">
+                <a href="./assets/images/gallery/1.jpg" data-lightbox="location-1" data-title="Caption - 1">
+                    <img src="./assets/images/gallery/1.jpg" alt="">
+                </a>
+                <a href="./assets/images/gallery/2.jpg" data-lightbox="location-1" data-title="Caption - 2">
+                    <img src="./assets/images/gallery/2.jpg" alt="">
+                </a>
+                <a href="./assets/images/gallery/3.jpg" data-lightbox="location-1" data-title="Caption - 3">
+                    <img src="./assets/images/gallery/3.jpg" alt="">
+                </a>
+                <a href="./assets/images/gallery/4.jpg" data-lightbox="location-1" data-title="Caption - 4">
+                    <img src="./assets/images/gallery/4.jpg" alt="">
+                </a>
+                <a href="./assets/images/gallery/5.jpg" data-lightbox="location-1" data-title="Caption - 5">
+                    <img src="./assets/images/gallery/5.jpg" alt="">
+                </a>
+                <a href="./assets/images/gallery/6.jpg" data-lightbox="location-1" data-title="Caption - 6">
+                    <img src="./assets/images/gallery/6.jpg" alt="">
+                </a>
+                <a href="./assets/images/gallery/7.jpg" data-lightbox="location-1" data-title="Caption - 7">
+                    <img src="./assets/images/gallery/7.jpg" alt="">
+                </a>
+                <a href="./assets/images/gallery/8.jpg" data-lightbox="location-1" data-title="Caption - 8">
+                    <img src="./assets/images/gallery/8.jpg" alt="">
+                </a>
+                <a href="./assets/images/gallery/2.jpg" data-lightbox="location-1" data-title="Caption - 9">
+                    <img src="./assets/images/gallery/2.jpg" alt="">
+                </a>
+ 
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pb-5">
+        <div class="container-lg">
+          <h3 class="fs-2 text-center">Location - 2</h3>
+          <p class="text-center">Small description of location - 2</p>
+          <div class="container-gallery">
+            <div class="gallery">
+                <a href="./assets/images/gallery/1.jpg" data-lightbox="location-2" data-title="Caption - 1">
+                    <img src="./assets/images/gallery/1.jpg" alt="">
+                </a>
+                <a href="./assets/images/gallery/2.jpg" data-lightbox="location-2" data-title="Caption - 2">
+                    <img src="./assets/images/gallery/2.jpg" alt="">
+                </a>
+                <a href="./assets/images/gallery/3.jpg" data-lightbox="location-2" data-title="Caption - 3">
+                    <img src="./assets/images/gallery/3.jpg" alt="">
+                </a>
+                <a href="./assets/images/gallery/4.jpg" data-lightbox="location-2" data-title="Caption - 4">
+                    <img src="./assets/images/gallery/4.jpg" alt="">
+                </a>
+                <a href="./assets/images/gallery/5.jpg" data-lightbox="location-2" data-title="Caption - 5">
+                    <img src="./assets/images/gallery/5.jpg" alt="">
+                </a>
+                <a href="./assets/images/gallery/6.jpg" data-lightbox="location-2" data-title="Caption - 6">
+                    <img src="./assets/images/gallery/6.jpg" alt="">
+                </a>
+                <a href="./assets/images/gallery/7.jpg" data-lightbox="location-2" data-title="Caption - 7">
+                    <img src="./assets/images/gallery/7.jpg" alt="">
+                </a>
+                <a href="./assets/images/gallery/8.jpg" data-lightbox="location-2" data-title="Caption - 8">
+                    <img src="./assets/images/gallery/8.jpg" alt="">
+                </a>
+                <a href="./assets/images/gallery/2.jpg" data-lightbox="location-2" data-title="Caption - 9">
+                    <img src="./assets/images/gallery/2.jpg" alt="">
+                </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="book-online py-5 mb-5">
+        <div class="contaner-lg">
+          <div class="row text-center justify-content-center">
+            <div class="col-md-10 col-lg-6 col-xxl-5">
+              <h3 class="fs-1">Book your visit online</h3>
+              <p class="fs-4 mt-4">
+                View available appointments and enjoy
+                <u>Dentistry Done Right</u> +&nbsp;Free Consultation
+              </p>
+              <div class="mt-4">
+                <a
+                  href="https://maps.app.goo.gl/xgu9iGdMV7pHig6c6"
+                  target="_blank"
+                  ><button>Book Online</button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="other-images my-5">
+        <div class="container-lg">
+          <h3 class="fs-2 text-center">Other Images</h3>
+          <div class="row justify-content-center align-items-center">
+            <div class="col-11 col-sm-10 col-md-7 col-lg-4 mt-5 px-0 px-md-2">
+              <a href="./assets/images/gallery/fb-1.jpg" data-lightbox="other" data-title="Caption - 1">
+                <img src="./assets/images/gallery/fb-1.jpg" alt="">
+            </a>
+            </div>
+            <div class="col-11 col-sm-10 col-md-7 col-lg-4 mt-5 px-0 px-md-2">
+              <a href="./assets/images/gallery/fb-2.jpg" data-lightbox="other" data-title="Caption - 1">
+                <img src="./assets/images/gallery/fb-2.jpg" alt="">
+            </a>
+            </div>
+            <div class="col-11 col-sm-10 col-md-7 col-lg-4 mt-5 px-0 px-md-2">
+              <a href="./assets/images/gallery/fb-3.jpg" data-lightbox="other" data-title="Caption - 1">
+                <img src="./assets/images/gallery/fb-3.jpg" alt="">
+            </a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+
+    <section class="footer bg-dark py-5">
+      <h3 class="fs-2 text-center text-white">
+        footer section will be updated as the last step
+      </h3>
+    </section>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/lightbox-plus-jquery.js"></script>
+    <!-- ----------------------bs5 javascript--------------------------- -->
+    <script src="./assets/js/bootstrap.js"></script>
+  </body>
+</html>
